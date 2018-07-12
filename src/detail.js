@@ -65,9 +65,9 @@ const update = () => {
                 lastData = response.data;
             }).catch(e => {
                 clearTimeout(updateTimer);
-                processData(lastData);
                 console.log("Couldn't fetch library occupancy data from server |", e);                
                 if (lastData) {
+                    processData(lastData);
                     // lastData.ts = new Date().toString(); // vorgaukeln
                 } else {
                     putText("no data", "#808080", 30);   
