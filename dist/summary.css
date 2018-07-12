@@ -37,7 +37,7 @@ body {
 }
 
 .occupancy .bar {
-	width: 180px;
+	flex-grow: 1;
 	height: 10px;
 	background-color: #FFFFFF;
 	border: 1px solid #000000;	
